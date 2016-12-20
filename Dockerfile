@@ -11,7 +11,7 @@ LABEL io.webdevops.layout=8
 LABEL io.webdevops.version=1.1.3
 
 ENV WEB_DOCUMENT_ROOT  /app
-ENV WEB_DOCUMENT_INDEX index.php
+ENV WEB_DOCUMENT_INDEX 'index.php index.html'
 ENV WEB_ALIAS_DOMAIN   *.vm
 ENV WEB_PHP_SOCKET  127.0.0.1:9000
 
