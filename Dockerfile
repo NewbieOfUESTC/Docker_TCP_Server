@@ -25,3 +25,4 @@ RUN /usr/local/bin/apt-install \
 
 
 EXPOSE 80 443
+CMD['ls -al']
