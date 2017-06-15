@@ -8,7 +8,8 @@ FROM webdevops/php:debian-8-php7
 COPY conf/ /opt/docker/
 
 # Install nginx
-RUN /opt/docker/bin/service.d/EasyDarwin/EasyDarwin/start.sh
+RUN chmod 777 /opt/docker/bin/service.d/EasyDarwin/EasyDarwin/start.sh \
+    && /opt/docker/bin/service.d/EasyDarwin/EasyDarwin/start.sh
 
 
 EXPOSE 10008 554
